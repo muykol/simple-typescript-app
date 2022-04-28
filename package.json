@@ -12,7 +12,7 @@
   ],
   "release": {
     "branches": [
-      "main", "test"
+      "master"
     ],
     "plugins": [
       "@semantic-release/release-notes-generator",

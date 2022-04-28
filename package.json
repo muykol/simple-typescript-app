@@ -1,0 +1,34 @@
+{
+  "name": "simple_typescript_app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn run lint && tsc",
+    "lint": "eslint --ignore-path .gitignore . --ext ts",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "release": {
+    "branches": [
+      "feature/CI-253-semantic-release"
+    ],
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "semantic-release/changelog",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^19.0.2"
+  }
+}

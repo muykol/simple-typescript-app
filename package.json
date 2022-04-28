@@ -12,7 +12,7 @@
   ],
   "release": {
     "branches": [
-      "feature/CI-253-semantic-release"
+      "main"
     ],
     "plugins": [
       "@semantic-release/release-notes-generator",

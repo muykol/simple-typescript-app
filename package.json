@@ -2,6 +2,10 @@
   "name": "simple_typescript_app",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muykol/simple-typescript-app.git"
+  },
   "scripts": {
     "build": "echo BUILDING!",
     "test": "jest"
